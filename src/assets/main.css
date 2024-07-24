@@ -7,6 +7,11 @@
   font-weight: normal;
 }
 
+
+body {
+  background-color: #d8bfd8;
+}
+
 a,
 .green {
   text-decoration: none;
@@ -33,3 +38,5 @@ a,
     padding: 0 2rem;
   }
 }
+
+
