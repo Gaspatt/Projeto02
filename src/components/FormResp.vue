@@ -1,5 +1,8 @@
 <script setup>
 
+defineProps ({
+   dados: Object
+})
 </script>
 
 <template>
@@ -19,13 +22,13 @@
                 <p>Senha: <span>{{ dados.senha }}</span></p>
             </div>
             <div class="p">
-                <p>Confirmação de senha: <span> {{ dados.confirme }} </span></p>
+                <p>Confirmação de senha: <span> {{ dados.senhaConfirma }} </span></p>
             </div>
             <div class="p">
                 <p>Nascimento: <span> {{ dados.nascimento }} </span></p>
             </div>
             <div class="p">
-                <p>Endereço: <span> {{ dados.adress }}</span></p>
+                <p>Endereço: <span> {{ dados.endereco }}</span></p>
             </div>
             <div class="p">
                 <p>Cidade: <span> {{ dados.cidade }} </span></p>
