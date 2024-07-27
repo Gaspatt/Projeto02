@@ -13,11 +13,15 @@ function mostrar(data) {
     dados.value = data
 }
 
+function esconder() {
+    mostrarResultado.value = false
+}
+
 </script>
 
 <template>
     <FormInicial v-if="!mostrarResultado" @enviar="mostrar"/>
-    <FormResp v-if="mostrarResultado" :dados="dados"/>
+    <FormResp v-if="mostrarResultado" :dados="dados" @voltar="esconder"/>
 </template>
 
 <style scoped></style>
